@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .marquee-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.marquee-content {
+  display: flex;
+  height: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 20px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+<body>
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <img class="marquee-image" src="https://via.placeholder.com/200x200.png?text=Image+1" alt="Image 1">
+      <img class="marquee-image" src="https://via.placeholder.com/200x200.png?text=Image+2" alt="Image 2">
+      <img class="marquee-image" src="https://via.placeholder.com/200x200.png?text=Image+3" alt="Image 3">
+      <img class="marquee-image" src="https://via.placeholder.com/200x200.png?text=Image+4" alt="Image 4">
+    </div>
+  </div>
+</body>
+</html>
