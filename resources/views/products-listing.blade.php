@@ -196,7 +196,7 @@
                     Categories
                   </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div id="collapseTwo " class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <form>
                       @foreach($categories as $category)
